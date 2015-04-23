@@ -283,10 +283,25 @@ Dashboard developed as web application based on Spring MVC and runs as a Spring 
  - Bootstrap
  - Postman REST client
 
+###Building and Running Application
+Go to project's root folder. For example:
+```
+cd /home/ubuntu/url-shortner
+```
+Command to build: 
+```
+mvn clean package
+```
+Command to run:
+```
+java -jar target/url-shortner-0.1.0.jar
+```
+ 
+
 ####References
  - [Spring](spring.io/guides/gs)
  - [URL Shortening](http://en.wikipedia.org/wiki/URL_shortening)
- - [HTML](http://www.w3schools.com/html/default.asp)
+ - [HTML](http://www.w3schools.com/html/default.a`sp)
  - [CSS](http://www.w3schools.com/css/default.asp)
  - [Bootstrap](http://www.w3schools.com/bootstrap/default.asp)
  - [JavaScript](http://www.w3schools.com/js/default.asp)
