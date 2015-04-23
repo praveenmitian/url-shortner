@@ -1,8 +1,6 @@
 
-
 ## URL Shortener
 ***
-
 [URL shortening](http://bit.ly/tinyurlwiki) is a technique on the World Wide Web in which a uniform resource locator (URL) may be made substantially shorter in length and still direct to the required page. This is achieved by using an redirect on a domain name that is short, which links to the web page that has a long URL. This is convenient for messaging technologies that limit the number of characters that may be used in a message, such as Twitter. 
 
 Other uses of URL shortening are to "beautify" a link, track clicks, or disguise the underlying address. 
@@ -40,9 +38,7 @@ POST http://localhost:8080/api/v1/shorten
 ```
 **Example Request:**
 ```
-POST http://localhost:8080/api/v1/shorten
-
-{"longUrl":"https://www.google.co.in/search?sclient=psy-ab&es_sm=93&biw=1366&bih=643&noj=1&q=jquery+append+json+data+inside+html+tag&oq=jquery+append+json+data+inside+html"}
+curl -X POST --data '{"longUrl":"http://stackoverflow.com/questions/6525538/convert-utc-date-time-to-local-date-time-using-javascript"}' --header "Content-Type:application/json" http://54.200.113.144:8080/api/v1/shorten
 ```
 **Response:**
 ```
@@ -58,7 +54,7 @@ GET http://localhost:8080/api/v1/expand/{urlId}
 ```
 **Example Request:**
 ```
-GET http://localhost:8080/api/v1/expand/zjwOlHd
+curl http://localhost:8080/api/v1/expand/zjwOlHd
 ```
 **Response:**
 ```
@@ -66,10 +62,12 @@ http://www.journaldev.com/2593/spring-jdbc-and-jdbctemplate-crud-with-datasource
 ```
 ####**3. Top 5 popular viewed URLs**
 Returns the five most viewed Url that is shortned.
-
-**Example Request:**
 ```
 GET http://localhost:8080/api/v1/mostpopular
+```
+**Example Request:**
+```
+curl http://localhost:8080/api/v1/mostpopular
 ```
 **Response:**
 ```
@@ -98,10 +96,13 @@ GET http://localhost:8080/api/v1/mostpopular
 ```
 ####**4. Recently viewed URLs**
 Returns the five recently viewed Url that is shortned.
+```
+GET http://localhost:8080/api/v1/recentlyviewed
+```
 
 **Example Request:**
 ```
-GET http://localhost:8080/api/v1/recentlyviewed
+curl http://localhost:8080/api/v1/recentlyviewed
 ```
 **Response:**
 ```
@@ -130,10 +131,12 @@ GET http://localhost:8080/api/v1/recentlyviewed
 ```
 ####**5. List of shorten URLs**
 Returns list of all  Url that is shortned.
-
-**Example Request:**
 ```
 GET http://localhost:8080/api/v1/shorturllist
+```
+**Example Request:**
+```
+curl http://localhost:8080/api/v1/shorturllist
 ```
 **Response:**
 ```
@@ -146,10 +149,12 @@ GET http://localhost:8080/api/v1/shorturllist
 ```
 ####**6. Total count of URL shorten**
 Returns the count of total number of url shortened.
-
-**Example Request:**
 ```
 GET http://localhost:8080/api/v1/urlstotalcount
+```
+**Example Request:**
+```
+curl http://localhost:8080/api/v1/urlstotalcount
 ```
 **Response:**
 ```
@@ -157,10 +162,12 @@ GET http://localhost:8080/api/v1/urlstotalcount
 ```
 ####**7. Recently shortner URLs**
 Returns the five recently shortned Url.
-
-**Example Request:**
 ```
 GET http://localhost:8080/api/v1/recentlyshorten
+```
+**Example Request:**
+```
+curl http://localhost:8080/api/v1/recentlyshorten
 ```
 **Response:**
 ```
@@ -189,10 +196,12 @@ GET http://localhost:8080/api/v1/recentlyshorten
 ```
 ####**8. Day wise total shorten count for the past 5 days**
 Returns the total number of url shortened for the past 5 days.
-
-**Example Request:**
 ```
 GET http://localhost:8080/api/v1/last5dayscount
+```
+**Example Request:**
+```
+curl http://localhost:8080/api/v1/last5dayscount
 ```
 
 **Response:**
@@ -222,10 +231,12 @@ GET http://localhost:8080/api/v1/last5dayscount
 ```
 ####**9. List of shorten URLs with each view count**
 Returns the list of shorten url with each view count.
-
-**Example Request:**
 ```
 GET http://localhost:8080/api/v1/listurl
+```
+**Example Request:**
+```
+curl http://localhost:8080/api/v1/listurl
 ```
 
 **Response:**
