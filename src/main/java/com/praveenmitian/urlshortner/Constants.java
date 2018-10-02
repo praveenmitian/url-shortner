@@ -7,8 +7,8 @@ package com.praveenmitian.urlshortner;
  *
  */
 public final class Constants {
-	public static final String LONGURL = "longUrl";
-	public static final String SHORTURL = "shortUrl";
+	public static final String LONGURL = "longUrl1";
+	public static final String SHORTURL = "shortUrl1";
 	public static final String COUNT = "count";
 	public static final String CREATED_AT = "createdDate";
 	public static final String LAST_ACCESSED_AT = "modifiedDate";
